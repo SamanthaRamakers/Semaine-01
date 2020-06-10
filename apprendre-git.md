@@ -14,15 +14,15 @@ Nous verrons plus loin dans cette introduction comment procéder.
 
 Pour vous donner un petit coup de pouce voici déjà un lexique des termes les plus courants rencontrés:
 
-- **Repository**: Vous l'avez déjà un peu approché pendant votre test, un repository ou "dépôt" en français, sert à déposer toute les informations / fichiers / éléments graphiques nécessaires à votre projet 
+- **Repository**: Vous l'avez déjà un peu approché pendant votre test, un repository ou "dépôt" en français, sert à déposer toute les informations / fichiers / éléments graphiques nécessaires à votre projet
 
-- **Clone:** Un clone est la version téléchargée du repository qui vous est propre et qui se situe en local dans votre ordinateur. Vous pouvez le mettre à jour avec un *pull* et ajouter du contenu (voir le chapitre workflow)
+- **Clone:** Un clone est la version téléchargée du repository qui vous est propre et qui se situe en local dans votre ordinateur. Vous pouvez le mettre à jour avec un _pull_ et ajouter du contenu (voir le chapitre workflow)
 
 - **Branche:** Une branche dans git c'est un peu comme les 4 branches d'une fourchette, on part du même point (la master, qui équivaudrait au manche de la fourchette) suivi des branches dans son prolongement prenant chacune un autre chemin. Chaque branche que vous créez part donc d'un tronc commun (la master par exemple) et crée une version qui lui est propre et sur laquelle vous pouvez travailler sans risquer d'altérer le contenu de la branche master.
-Par convention on ne pousse un travail sur la master que lorsqu'il est complètement terminé. 
-Vous pouvez créer une branche portant le nom "développement" sur laquelle vous pourrez mettre l'avancement intermédiaire de votre travail, et ainsi qu'une déviant de développement, portant votre nom, vous permettant de travailler sur une feature sans empiéter sur le travail de vos camarade dans le cadre d'un travail de groupe, ou simplement par soucis du détail si vous travaillez seul et que vous craignez de faire une mauvaise manipulation.
+  Par convention on ne pousse un travail sur la master que lorsqu'il est complètement terminé.
+  Vous pouvez créer une branche portant le nom "développement" sur laquelle vous pourrez mettre l'avancement intermédiaire de votre travail, et ainsi qu'une déviant de développement, portant votre nom, vous permettant de travailler sur une feature sans empiéter sur le travail de vos camarade dans le cadre d'un travail de groupe, ou simplement par soucis du détail si vous travaillez seul et que vous craignez de faire une mauvaise manipulation.
 
-- **Fetch:** va chercher les nouvelles données potentielles sur un repository distant 
+- **Fetch:** va chercher les nouvelles données potentielles sur un repository distant
 
 - **Pull:** va chercher et intègre les nouvelles données potentielles sur un repository distant pour les intégrer à celui que vous possédez en local sur votre ordinateur
 
@@ -32,27 +32,29 @@ Vous pouvez créer une branche portant le nom "développement" sur laquelle vous
 
 - **Commit:** un commit contient les changements que vous avez validés, il possède un code de référence qui permet d'être retrouvé et donc de pouvoir observer les différences entre la version précédente du code et la version du retenue par le commit. Il possède un code, un nom, une description. Nous allons simplement nous atterder sur le nom dans le cadre de notre formation: idéalement le nom doit comporter l'objet du travail (par exemple pour une nouvelle fonctionnalité on l'appellera : feature; le nom de la fonctionnalité; et la modification apportée à cette fonctionnalité)
 
-*Exemple d'un nom de commit conforme:*
+_Exemple d'un nom de commit conforme:_
 
 `"feature/index: creation d'index.html"`
 
-- **Push:** Après avoir commit votre travail, il est présent dans la mémoire git de votre dossier en local, pour l'uploader sur la mémoire distante il vous faut "pousser" (= push en anglais), le push permet donc de mettre à disposition en ligne le travail que vous avez effectué en local. 
+- **Push:** Après avoir commit votre travail, il est présent dans la mémoire git de votre dossier en local, pour l'uploader sur la mémoire distante il vous faut "pousser" (= push en anglais), le push permet donc de mettre à disposition en ligne le travail que vous avez effectué en local.
 
 ### **2. Usage idéal:**
 
-***Le matin à 9h:*** 
+**_Le matin à 9h:_**
+
 1. Vous allez fetch le repos distant (celui de la sirius-school) afin de détecter les éventuels changements
 2. Vous allez pull le résultat du fetch et l'intégrer à votre repo
 
-***Lorsque vous travaillez:***
+**_Lorsque vous travaillez:_**
 
 1. Vous écrivez vos changements et les sauvegardez via la commande CTRL+S sur l'ensemble de vos fichiers ou ouvrez l'onglet file et clickez sur "save all" -> leur état est labellé sur "Changes"
 2. Vous validez les changements que vous avez effectués -> leur état est labellé "Staged Changes"
-3. Vous commitez vos fichiers, le nom de commit est obligatoire, un champs s'ouvre automatiquement dans l'interface à cet effet: écrivez le nom du commit et validez avec le v 
+3. Vous commitez vos fichiers, le nom de commit est obligatoire, un champs s'ouvre automatiquement dans l'interface à cet effet: écrivez le nom du commit et validez avec le v
 4. Maintenant vous pouvez push vos fichiers cliquez sur les trois petits points, sélectionnez push
 5. Vos fichiers sont uploadés sur github
 
 ### **3. Exemple avec l'interface VSCode pour Git**
+
 Nous verrons dans les semaines à venir l'usage plus poussé de Git et Github, mais pour l'instant contentez vous de l'utiliser via l'interface Gitdesktop ou via VScode en clickant sur cette icone dans votre barre d'outil pour accéder aux commande git, la pastille indique le nombre de changement trackés par Git:
 
 ![Imgur](https://i.imgur.com/bMFK1iz.png)
@@ -60,6 +62,7 @@ Nous verrons dans les semaines à venir l'usage plus poussé de Git et Github, m
 Lorsque vous clickez sur cet outil vous obtenez une interface telle que celle-ci:
 
 ![Imgur](https://i.imgur.com/ftCfnso.png)
+Modif
 
 1. Le point 1 reprend les changements que vous avez apporté à vos fichiers mais que vous n'avez pas encore signalé comme changement à retenir pour git. Pour confirmer à git qu'il doit bien prendre en compte les changements fait à ces fichiers il suffit de passer son curseur sur le nom du fichier, un plus apparait, clickez dessus afin de les labeller "Staged Changes"
 
@@ -76,7 +79,6 @@ Lorsque vous clickez sur cet outil vous obtenez une interface telle que celle-ci
 5. Clickez sur push
 
 6. Et voilà votre travail se trouve sur votre repository "fork" de la semaine! Il nous est donc accessible à la correction!
-
 
 ### **4. Exercice obligatoire**
 
@@ -95,17 +97,17 @@ Pour ce faire clickez sur l'onglet fork en haut à droite de votre interface:
 
 Voilà, vous possédez désormais une copie personnelle du dépôt de notre première semaine dans votre onglet repositories que vous pouvez cloner sur votre ordinateur.
 
-Pour ce faire: 
+Pour ce faire:
 
-1. Allez dans "your repositories" sélectionnez votre fork, clickez sur "clone or download" 
-![Imgur](https://i.imgur.com/oAgknwA.png)
+1. Allez dans "your repositories" sélectionnez votre fork, clickez sur "clone or download"
+   ![Imgur](https://i.imgur.com/oAgknwA.png)
 
 2. Clickez ensuite sur Open in Desktop
 
 ![Imgur](https://i.imgur.com/QreDb5H.png)
 
 3. Clickez sur Ouvrir Github Desktop dans la boite d'alerte:
-![Imgur](https://i.imgur.com/TmPT756.png)
+   ![Imgur](https://i.imgur.com/TmPT756.png)
 
 4. Git desktop va alors se lancer et se charger de télécharger votre clone sur votre ordinateur: Par défaut le chemin vers ce fichier sera documents/Github/le-nom-du-fork, vous pouvez décider de modifier le chemin de destination en clickant sur choose (par exemple Bureau/le-nom-du-fork pour l'avoir directement sur votre bureau) ensuite clickez sur clone
 
@@ -113,24 +115,19 @@ Pour ce faire:
 
 5. Et voilà votre dossier est cloné sur votre ordinateur !
 
-
-Chaque jour, veillez à mettre à jour votre Fork, en effet, nous pourrions y apporter des modifications qui ne se retrouveront pas automatiquement sur votre version du dépôt. 
+Chaque jour, veillez à mettre à jour votre Fork, en effet, nous pourrions y apporter des modifications qui ne se retrouveront pas automatiquement sur votre version du dépôt.
 
 ### **Comment mettre son fork à jour**
 
-Il n'existe malheureusement pas d'outils visuels concernant la mise à jour de votre fork. 
+Il n'existe malheureusement pas d'outils visuels concernant la mise à jour de votre fork.
 Pour ce faire il vous faudra donc avoir recours à votre terminal de commande.
 Ouvrez git bash dans l'onglet terminal de VSCode, tirez la petite languette bleue en bas de votre écran vers le haut en maintenant le click gauche de votre souris et remontant vers le haut la flèche:
 
 ![Imgur](https://i.imgur.com/2PTM1q8.png)
 
-
 **Vous obtenez ce résultat:**
 
-
 ![Imgur](https://i.imgur.com/gmGqMnF.png)
-
-
 
 Le chemin relatif du dossier dans lequel vous êtes en train de travailler est indiqué, ainsi que le nom de la branche.
 Pour apprendre à naviguer dans votre terminal référez vous au fichier de théorie apprendre-le-terminal <!-- Ajouter le lien vers la théorie -->
@@ -144,10 +141,12 @@ Il s'agit en réalité de demander à votre Git, installé sur votre PC, d'aller
 
 Pour ce faire entrez cette commande à chaque nouvelle semaine que vous forkez:
 
-# Ajouter l'upstream 
+# Ajouter l'upstream
+
 L'upstream c'est le serveur distant sur lequel est stocké le repo à l'origine de votre fork, il faut indiquer à votre ordinateur où il doit aller chercher l'information, pour ce faire tapez cette commande dans le terminal en remplaçant l'url d'exemple par l'url du repository d'origine:
 
 `git remote add upstream https://url-du-repo-de-la-semaine.git`
+
 # Lister serveurs distants pour vérifier l'ajout de upstream
 
 `git remote -v`
@@ -157,10 +156,10 @@ L'upstream c'est le serveur distant sur lequel est stocké le repo à l'origine 
 `git fetch upstream`
 
 # Intégrer les commits à ma version du repo
+
 `git pull`
 
 N'oubliez pas d'enregistrer les changements en local mais également sur votre repo Github, voir le chapitre "Workflow" ici plus haut.
-
 
 # Faire une pull request
 
@@ -170,7 +169,7 @@ Une pull request permet d'avertir le propriétaire du repository orginel, que vo
 La pull request permet de comparer les changements effectués grâce à une interface spécifiant le code originel et le code apporté par le collaborateur (assigné).
 Il possède un champs "commentaire" sous chaque changement qui permet au reviewer (le correcteur) de proposer une solution tierse ou de commenter la solution proposée, dans notre cas il nous permettra de corriger votre travail et de vous laisser des propositions d'améliorations.
 
-Pour réaliser une pull request: effectuez, validez, pushez vos changements sur votre repository distant (Github). 
+Pour réaliser une pull request: effectuez, validez, pushez vos changements sur votre repository distant (Github).
 
 1. Ouvrez votre repository
 2. Clickez sur pull request
@@ -179,18 +178,18 @@ Pour réaliser une pull request: effectuez, validez, pushez vos changements sur 
 
 3. CLickez sur new pull request
 
- ![Imgur](https://i.imgur.com/IbQsuwd.png)
+![Imgur](https://i.imgur.com/IbQsuwd.png)
 
 4. Clickez sur create pull request
 
 ![Imgur](https://i.imgur.com/6qQjNwU.png)
 
-5. Remplissez le formulaires: 
+5. Remplissez le formulaires:
 
 ![Imgur](https://i.imgur.com/O6Zff4I.png)
 
 - En point 1: Indiquez le titre de l'exercice
-- En point 2:  Laissez une description de ce que vous avez réalisés, un guide d'utilisation si nécessaire, les difficultés que vous avez rencontrés, toute information qui vous semble pertinente de nous communiquer
+- En point 2: Laissez une description de ce que vous avez réalisés, un guide d'utilisation si nécessaire, les difficultés que vous avez rencontrés, toute information qui vous semble pertinente de nous communiquer
 - En point 3: sélectionnez la personne à qui demander une review: en l'occurence Jeremy ou Julie
 - Sélectionnez les assignés au projet: vous et toute personne y ayant collaboré
 - Sélectionnez le label correspondant à votre travail (par exemple dans ce cas ci il s'agit de documentation mais vous pourriez rencontrer un bug et nous envoyer une pull request labellée bug afin que nous puissions travailler dessus ensemble)
