@@ -2,6 +2,7 @@
 
 C'est le nerf de la guerre, aussi important qu'un language, Git est un logiciel de versionning, il permet de travailler en collaboration en entreprise ou en coopérative avec vos collègues, amis, co-apprenants.
 Il s'agit du plus utilisé et du plus accessible, cependant, il s'agit de notions complexes qui vont vous demander rigueur et attention.
+Essai
 
 **À quoi ça sert concrètement?**
 
