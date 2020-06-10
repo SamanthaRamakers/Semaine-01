@@ -6,6 +6,7 @@ Félicitation, vous faites maintenant partie de la team Sirius School!
 Vous trouverez toute la ressource nécessaire au bon déroulement de votre première semaine parmis nous dans ce repository.
 coucou
 coucou
+Hello!
 
 ## Comment ça marche?
 
